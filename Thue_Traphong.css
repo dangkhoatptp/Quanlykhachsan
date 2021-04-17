@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1243px;
+  height: 663px;
+  font-family: sans-serif;
+  display: flex;
+}
+.header {
+  width: 260px;
+  height: 663px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.logo {
+  width: 260px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.list {
+  width: 260px;
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  width: 260px;
+  font-size: 17px;
+  margin: 18px 0;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.list-item-content {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+.list-item-content:hover {
+  color: #2c3e50;
+  transition: 0.2s ease;
+}
+.list-item .selected {
+  text-decoration: none;
+  color: red;
+}
+.icon {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+
+.container {
+  width: 1000px;
+  height: 663px;
+  display: flex;
+  flex-direction: column;
+}
+.container .container-name {
+  width: 1000px;
+  height: 65px;
+  border-bottom: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
+.container-name > div {
+  font-size: 20px;
+  margin: 21px 0 22px 90px;
+}
+.container .container-content {
+  width: 1000px;
+  height: 598px;
+  display: flex;
+}
+.container-content .content {
+  width: 614px;
+  height: 598px;
+  overflow: hidden;
+}
+.content .label {
+  width: 614px;
+  height: 48px;
+  display: flex;
+  font-size: 15px;
+}
+.label label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label label[for="r1"] {
+  width: 116px;
+  height: 48px;
+} 
+.label label[for="r2"] {
+  width: 188px;
+  height: 48px;
+} 
+.label label[for="r3"] {
+  width: 180px;
+  height: 48px;
+} 
+.label label[for="r4"] {
+  width: 130px;
+  height: 48px;
+} 
+label[for="r1"]:hover, label[for="r2"]:hover, label[for="r3"]:hover, label[for="r4"]:hover {
+  background-color: #dfe6e9;
+  transition: 0.3s ease;
+}
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+.hightlight {
+  width: 116px;
+  height: 2px;
+  background-color: #0984e3;
+}
+#r1:checked ~ .hightlight {
+  margin-left: 0;
+  transition: 0.3s ease;
+}
+#r2:checked ~ .hightlight {
+  margin-left: 116px;
+  width: 188px;
+  transition: 0.3s ease;
+}
+#r3:checked ~ .hightlight {
+  margin-left: 304px;
+  width: 180px;
+  transition: 0.3s ease;
+}
+#r4:checked ~ .hightlight {
+  margin-left: 484px;
+  width: 130px;
+  transition: 0.3s ease;
+}
+.line {
+  width: 614px;
+  height: 1px;
+  background-color: #b2bec3;
+}
+.slides {
+  width: 2456px;
+  height: 547px;
+  display: flex;
+  position: relative;
+}
+.slides div {
+  width: 614px;
+  height: 547px;
+}
+#r1:checked ~ .hightlight ~ .line ~ .slides {
+  margin-left: 0;
+}
+#r2:checked ~ .hightlight ~ .line ~ .slides {
+  margin-left: -100%;
+}
+#r3:checked ~ .hightlight ~ .line ~ .slides {
+  margin-left: -200%;
+}
+#r4:checked ~ .hightlight ~ .line ~ .slides {
+  margin-left: -300%;
+}
+.form {
+  width: 386px;
+  height: 598px;
+  border-left: 1px solid #bdc3c7;
+  box-sizing: border-box;
+}
